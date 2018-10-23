@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "author": "jiajun.qin",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/KoKuDolly/npmPackage-18-06-08.git"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.4"
   }
 }
