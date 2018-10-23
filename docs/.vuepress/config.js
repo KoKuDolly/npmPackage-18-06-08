@@ -1,10 +1,11 @@
 module.exports = {
+  base: '/npmPackage-18-06-08/',
   title: 'Hello VuePress',
   description: 'Just playing around',
   themeConfig: {
     repo: 'kokudolly/npmPackage-18-06-08',
     docsDir: 'docs',
-    docsBranch: 'master',
+    docsBranch: 'dev',
     editLinks: false,
     nav: [
       { text: 'Home', link: '/' },
