@@ -9,13 +9,18 @@ module.exports = {
     editLinks: false,
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' }
+      { text: 'Guide', link: '/guide/' },
+      { text: 'VuePress中文网', link: 'http://caibaojian.com/vuepress/'}
     ],
-    sidebar: 'auto',
-    sidebarDepth: 1,
+    sidebar: {
+      '/guide/': getSiderBar('指南')
+    },
+    sidebarDepth: [2, 3],
   },
   markdown: {
+    anchor: {
 
+    }
   },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }]
@@ -28,4 +33,18 @@ module.exports = {
       }
     }
   }
+}
+
+function getSiderBar(title) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        '',
+        'html头部元素',
+        '计算机代码元素'
+      ]
+    }
+  ]
 }

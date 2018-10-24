@@ -1,14 +1,14 @@
-
+# table
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
-
+# emoji
 :tada: :100:
 
 [[toc]]
-
+# tip
 ::: tip
 This is a tip
 :::
@@ -35,4 +35,4 @@ export default {
 }
 ```
 
-<img src="$withBase('/img/hero.png')">
+<!-- <img src="../.vuepress/public/img/hero.png"> -->
