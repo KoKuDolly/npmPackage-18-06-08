@@ -56,6 +56,13 @@ module.exports = {
     // },
 
     sidebar: 'auto',
-    sidebarDepth: 1
-  }
+    sidebarDepth: 1,
+  },
+  markdown: {
+
+  },
+  head: [
+    ['link', { rel: 'icon', href: `/logo.png` }]
+  ],
+  port: 333
 }
