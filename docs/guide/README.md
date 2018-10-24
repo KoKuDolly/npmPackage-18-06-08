@@ -34,3 +34,5 @@ export default {
   }
 }
 ```
+
+<img src="$withBase('/img/hero.png')">

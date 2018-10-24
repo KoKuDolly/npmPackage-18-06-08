@@ -9,52 +9,8 @@ module.exports = {
     editLinks: false,
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'External', link: 'https://google.com' },
-      {
-        text: 'Languages',
-        items: [
-          { text: 'Chinese', link: '/language/chinese' },
-          {
-            text: 'Japanese',
-            items: [
-              {text: 'Chinese', link: '/language/chinese'},
-              {text: 'Chinese', link: '/language/Japanese'}
-            ]
-          }
-        ]
-      }
+      { text: 'Guide', link: '/guide/' }
     ],
-    // sidebar: [
-    //   '/',
-    //   '/page-a',
-    //   ['page-b', 'Explicit link text'],
-    //   {
-    //     title: 'Group 1',
-    //     collapsable: false,
-    //     children: [
-    //       '/'
-    //     ]
-    //   },
-    //   {
-    //     title: 'Group 2',
-    //     children: [ /* ... */ ]
-    //   },
-    // ],
-
-    // siderbar: {
-    //   '/foo/': [
-    //     '',
-    //     'one',
-    //     'two'
-    //   ],
-    //   '/bar/': [
-    //     '',
-    //     'three',
-    //     'four'
-    //   ]
-    // },
-
     sidebar: 'auto',
     sidebarDepth: 1,
   },
@@ -64,5 +20,12 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }]
   ],
-  port: 333
+  port: 333,
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@alias': 'path/to/some/dir'
+      }
+    }
+  }
 }
