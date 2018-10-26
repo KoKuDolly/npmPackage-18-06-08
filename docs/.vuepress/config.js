@@ -50,12 +50,7 @@ module.exports = {
           { text: 'VuePress中文网', link: 'http://caibaojian.com/vuepress/'}
         ],
         sidebar: {
-          '/guide/': getSiderBar('指南'),
-          '/': [
-            '',
-            'contact',
-            'about'
-          ]
+          '/guide/': getSiderBar('指南')
         },
       },
       '/zh/': {
