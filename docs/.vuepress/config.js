@@ -2,7 +2,7 @@ module.exports = {
   base: '/vuepress-koku/',
   title: 'Hello VuePress',
   description: 'Just playing around',
-  dest: './dist/',
+  // dest: '.vuepress/dist', // 默认 .vuepress/dist
   themeConfig: {
     repo: 'kokudolly/vuepress-koku',
     docsDir: 'docs',
