@@ -1,77 +1,20 @@
 module.exports = {
-  dest: 'dist',
-  base: '/npmPackage-18-06-08/',
+  base: '/vuepress-koku/',
   title: 'Hello VuePress',
   description: 'Just playing around',
-  locales: {
-    '/': {
-      lang: 'en-US',
-      title: 'VuePress',
-      description: 'Vue-powered'
-    },
-    '/zh/': {
-      lang: 'zh-CN',
-      title: 'VuePress',
-      description: 'Vue 驱动'
-    }
-  },
+  // dest: '.vuepress/dist', // 默认 .vuepress/dist
   themeConfig: {
-    repo: 'kokudolly/npmPackage-18-06-08',
-    repoLabel: '贡献此代码',
-    // docsRepo: '',
-    // docsDir: 'docs',
-    // docsBranch: 'dev',
-    editLinks: true,
-    // navbar: false,
-    // displayAllHeaders: true,
-    activeHeaderLinks: false,
-    // sidebar: 'auto',
-    // search: false,
-    searchMaxSuggestions: 10,
-    locales: {
-      '/': {
-        selectText: 'Languages',
-        label: 'English',
-        editLinkText: 'Edit this page on GitHub',
-        lastUpdated: 'Last Updated',
-        serviceWorker: {
-          updatePopup: {
-            message: 'New content',
-            buttonText: 'Refresh'
-          }
-        },
-        algolia: {
-          apiKey: '',
-          indexName: ''
-        },
-        nav: [
-          { text: 'Home', link: '/' },
-          { text: 'Guide', link: '/guide/' },
-          { text: 'VuePress中文网', link: 'http://caibaojian.com/vuepress/'}
-        ],
-        sidebar: {
-          '/guide/': getSiderBar('指南')
-        },
-      },
-      '/zh/': {
-        selectText: '选择语言',
-        label: '简体中文',
-        editLinkText: '在 GitHub 上编辑此页',
-        serviceWorker: {
-          updatePopup: {
-
-          }
-        },
-        algolia: {},
-        nav: [
-          { text: 'Home', link: '/' },
-          { text: 'Guide', link: '/guide/' },
-          { text: 'VuePress中文网', link: 'http://caibaojian.com/vuepress/'}
-        ],
-        sidebar: {
-          '/guide/': getSiderBar('指南')
-        },
-      }
+    repo: 'kokudolly/vuepress-koku',
+    docsDir: 'docs',
+    docsBranch: 'dev',
+    editLinks: false,
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide/' },
+      { text: 'VuePress中文网', link: 'http://caibaojian.com/vuepress/'}
+    ],
+    sidebar: {
+      '/guide/': getSiderBar('指南')
     },
     
     sidebarDepth: 2
