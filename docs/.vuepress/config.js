@@ -28,7 +28,7 @@ module.exports = {
     ],
     sidebar: {
       '/guide/': getSiderBar('指南'),
-      '/content/': getSiderBar('内容'),
+      // '/content/': getSiderBar('内容'),
     },
     
     sidebarDepth: 2
@@ -59,9 +59,9 @@ function getSiderBar(title) {
       collapsable: false,
       children: [
         '',
-        'html头部元素',
-        '计算机代码元素',
-        // 'yaml',
+        'hrml-headers',
+        'computers',
+        'yaml',
         // 'out-a'
       ]
     }
