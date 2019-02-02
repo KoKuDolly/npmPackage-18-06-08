@@ -7,7 +7,7 @@ module.exports = {
     repo: 'kokudolly/vuepress-koku',
     docsDir: 'docs',
     docsBranch: 'dev',
-    editLinks: false,
+    editLinks: true,
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
@@ -59,7 +59,7 @@ function getSiderBar(title) {
       collapsable: false,
       children: [
         '',
-        'hrml-headers',
+        'html-headers',
         'computers',
         'yaml',
         // 'out-a'
