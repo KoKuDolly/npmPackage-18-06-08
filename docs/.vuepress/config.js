@@ -11,10 +11,24 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
+      { text: 'Content', items: [
+        { text: 'content1', link: ''},
+        { text: 'content2', link: ''},
+        { text: 'group1', items: [
+          { text: 'content3', link: ''},
+          { text: 'content4', link: ''}
+        ]},
+        {
+          text: 'group2', items: [
+            { text: 'content5', link: ''}
+          ]
+        }
+      ]},
       { text: 'VuePress中文网', link: 'http://caibaojian.com/vuepress/'}
     ],
     sidebar: {
-      '/guide/': getSiderBar('指南')
+      '/guide/': getSiderBar('指南'),
+      '/content/': getSiderBar('内容'),
     },
     
     sidebarDepth: 2
@@ -25,7 +39,7 @@ module.exports = {
     }
   },
   head: [
-    ['link', { rel: 'icon', href: `/logo.png` }]
+    ['link', { rel: 'icon', href: `./img/hero.png` }]
   ],
   port: 333,
   configureWebpack: {
@@ -34,7 +48,8 @@ module.exports = {
         '@': '/'
       }
     }
-  }
+  },
+  evergreen: true
 }
 
 function getSiderBar(title) {
@@ -45,7 +60,9 @@ function getSiderBar(title) {
       children: [
         '',
         'html头部元素',
-        '计算机代码元素'
+        '计算机代码元素',
+        // 'yaml',
+        // 'out-a'
       ]
     }
   ]
